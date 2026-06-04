@@ -1,26 +1,253 @@
-Key Performance Indicators (KPIs) Requirements:
-Total Loan Applications: We need to calculate the total number of loan applications received during a specified period. Additionally, it is essential to monitor the Month-to-Date (MTD) Loan Applications.
-Total Funded Amount: Understanding the total amount of funds disbursed as loans is crucial. We also want to keep an eye on the MTD Total Funded Amount metric.
-Total Amount Received: Tracking the total amount received from borrowers is essential for assessing the bank's cash flow and loan repayment. We should analyse the Month-to-Date (MTD) Total Amount Receive.
-Average Interest Rate: Calculating the average interest rate across all loans which will provide insights into our lending portfolio's overall cost.
-Average Debt-to-Income Ratio (DTI): Evaluating the average DTI for our borrowers helps us gauge their financial health. We need to compute the average DTI for all loans.
-Good Loan v Bad Loan KPI’s
+# 📊 Bank Loan Analysis Dashboard
 
-Good Loan:
-Good Loan Application Percentage
-Good Loan Applications
-Good Loan Funded Amount
-Good Loan Total Received Amount
-Bad Loan:
-Bad Loan Application Percentage
-Bad Loan Applications
-Bad Loan Funded Amount
-Bad Loan Total Received Amount
+## Overview
 
-CHARTS
-Monthly Trends by Issue Date (Line/ Area Chart):  To identify seasonality and long-term trends in lending activities
-Regional Analysis by State (Bar Chart): To identify regions with significant lending activity and assess regional disparities
-Loan Term Analysis (Donut Chart): To allow the client to understand the distribution of loans across various term lengths.
-Employee Length Analysis (Bar Chart): How lending metrics are distributed among borrowers with different employment lengths, helping us assess the impact of employment history on loan applications.
-Loan Purpose Breakdown (Bar Chart): Will provide a visual breakdown of loan metrics based on the stated purposes of loans, aiding in the understanding of the primary reasons borrowers seek financing.
-Home Ownership Analysis (Tree/ Heat Map): For a hierarchical view of how home ownership impacts loan applications and disbursements.
+This project provides a comprehensive analysis of bank loan data through interactive dashboards and key performance indicators (KPIs). The objective is to monitor lending performance, assess portfolio quality, analyze borrower characteristics, and support data-driven decision-making.
+
+The dashboard is designed using business intelligence tools and focuses on tracking loan applications, disbursements, repayments, borrower risk profiles, and loan performance trends.
+
+---
+
+## 🎯 Project Objectives
+
+* Monitor overall lending performance.
+* Track loan disbursement and repayment activities.
+* Evaluate portfolio quality through Good Loan and Bad Loan metrics.
+* Analyze borrower demographics and financial characteristics.
+* Identify regional and temporal lending trends.
+* Support strategic decision-making through visual analytics.
+
+---
+
+## 📌 Key Performance Indicators (KPIs)
+
+### 1. Total Loan Applications
+
+Measures the total number of loan applications received during the selected period.
+
+**Metrics:**
+
+* Total Loan Applications
+* Month-to-Date (MTD) Loan Applications
+
+---
+
+### 2. Total Funded Amount
+
+Represents the total amount of money disbursed to borrowers.
+
+**Metrics:**
+
+* Total Funded Amount
+* Month-to-Date (MTD) Funded Amount
+
+---
+
+### 3. Total Amount Received
+
+Tracks the total repayments received from borrowers.
+
+**Metrics:**
+
+* Total Amount Received
+* Month-to-Date (MTD) Amount Received
+
+---
+
+### 4. Average Interest Rate
+
+Calculates the average interest rate across all approved loans.
+
+**Purpose:**
+
+* Understand lending profitability.
+* Monitor pricing strategy effectiveness.
+
+---
+
+### 5. Average Debt-to-Income Ratio (DTI)
+
+Measures the average borrower debt burden relative to income.
+
+**Purpose:**
+
+* Assess borrower financial health.
+* Evaluate credit risk exposure.
+
+---
+
+## 🏆 Good Loan vs Bad Loan Analysis
+
+### Good Loan KPIs
+
+Loans classified as fully paid or current.
+
+#### Metrics
+
+* Good Loan Application Percentage
+* Number of Good Loan Applications
+* Good Loan Funded Amount
+* Good Loan Total Received Amount
+
+---
+
+### Bad Loan KPIs
+
+Loans classified as charged-off, defaulted, or non-performing.
+
+#### Metrics
+
+* Bad Loan Application Percentage
+* Number of Bad Loan Applications
+* Bad Loan Funded Amount
+* Bad Loan Total Received Amount
+
+---
+
+## 📈 Dashboard Visualizations
+
+### 1. Monthly Trends by Issue Date
+
+**Visualization:** Line Chart / Area Chart
+
+**Purpose:**
+
+* Identify seasonal patterns.
+* Monitor long-term lending growth.
+* Analyze fluctuations in loan demand.
+
+---
+
+### 2. Regional Analysis by State
+
+**Visualization:** Bar Chart
+
+**Purpose:**
+
+* Compare lending activity across states.
+* Identify high-performing regions.
+* Detect regional disparities.
+
+---
+
+### 3. Loan Term Analysis
+
+**Visualization:** Donut Chart
+
+**Purpose:**
+
+* Understand the distribution of loans across different repayment terms.
+* Analyze borrower preferences.
+
+---
+
+### 4. Employment Length Analysis
+
+**Visualization:** Bar Chart
+
+**Purpose:**
+
+* Examine lending behavior across employment categories.
+* Assess the impact of employment stability on loan approvals.
+
+---
+
+### 5. Loan Purpose Breakdown
+
+**Visualization:** Bar Chart
+
+**Purpose:**
+
+* Identify the most common reasons borrowers seek loans.
+* Analyze funding allocation across loan purposes.
+
+Examples:
+
+* Debt Consolidation
+* Home Improvement
+* Small Business
+* Education
+* Medical Expenses
+
+---
+
+### 6. Home Ownership Analysis
+
+**Visualization:** Tree Map / Heat Map
+
+**Purpose:**
+
+* Analyze loan applications by home ownership status.
+* Understand the relationship between property ownership and borrowing behavior.
+
+Categories:
+
+* Rent
+* Mortgage
+* Own
+* Other
+
+---
+
+## 📂 Dataset Features
+
+Typical dataset fields include:
+
+| Column Name       | Description                      |
+| ----------------- | -------------------------------- |
+| Loan ID           | Unique loan identifier           |
+| Issue Date        | Date loan was issued             |
+| Loan Amount       | Approved loan amount             |
+| Funded Amount     | Amount disbursed                 |
+| Total Payment     | Amount repaid                    |
+| Interest Rate     | Annual interest rate             |
+| DTI               | Debt-to-Income Ratio             |
+| Loan Status       | Current, Fully Paid, Charged Off |
+| State             | Borrower's state                 |
+| Term              | Loan repayment term              |
+| Employment Length | Borrower's employment history    |
+| Purpose           | Purpose of loan                  |
+| Home Ownership    | Ownership status                 |
+
+---
+
+## 🛠️ Tools & Technologies
+
+* SQL (Data Cleaning & KPI Calculations)
+* Microsoft Excel
+* Power BI / Tableau
+* PostgreSQL / MySQL
+* Data Visualization Techniques
+
+---
+
+## 📊 Business Insights Generated
+
+* Loan application trends over time.
+* State-wise lending performance.
+* Good loan vs bad loan portfolio quality.
+* Borrower financial health assessment using DTI.
+* Impact of employment length on lending.
+* Purpose-wise loan demand analysis.
+* Home ownership influence on loan approval and repayment.
+
+---
+
+## 🚀 Expected Outcomes
+
+The dashboard enables stakeholders to:
+
+* Improve credit risk management.
+* Monitor lending portfolio performance.
+* Identify growth opportunities.
+* Optimize loan approval strategies.
+* Enhance borrower segmentation and targeting.
+* Support data-driven business decisions.
+
+---
+
+## 📧 Author
+
+**Harsh Raj**
+BS Economics, IISER Bhopal
+Data Analytics | SQL | Power BI | Economics | Finance
